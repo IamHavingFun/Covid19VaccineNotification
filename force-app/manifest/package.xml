@@ -3,6 +3,7 @@
 	<types>
 		<members>IndividualDataController</members>
 		<members>IndividualDataControllerTest</members>
+		<members>IndividualDataBatch</members>
 		<name>ApexClass</name>
 	</types>
 	<types>
