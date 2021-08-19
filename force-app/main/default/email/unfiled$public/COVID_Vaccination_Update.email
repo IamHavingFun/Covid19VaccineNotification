@@ -1,0 +1,10 @@
+Dear {!Individual__c.Name}
+
+Hope you are doing well !
+
+As per government guidelines, your nearest vaccination center is {!Individual__c.Nearest_Vaccination_Center__c} 
+
+Please get vaccinated if you are not vaccinated as soon as possible.
+
+Thanks,
+GOI
