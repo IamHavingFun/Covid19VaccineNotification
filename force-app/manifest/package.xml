@@ -16,10 +16,6 @@
 		<name>CustomObject</name>
 	</types>
 	<types>
-		<members>SendNotificationForVaccinationCenter</members>
-		<name>Flow</name>
-	</types>
-	<types>
 		<members>unfiled$public/COVID_Vaccination_Update</members>
 		<name>EmailTemplate</name>
 	</types>
@@ -31,6 +27,11 @@
 		<members>Individual__c.COVID_Vaccination_Update</members>
 		<name>WorkflowAlert</name>
 	</types>
+	<types>
+		<members>Covid19Data</members>
+		<name>CustomLabel</name>
+	</types>
 	<version>51.0</version>
 </Package>
+
 
