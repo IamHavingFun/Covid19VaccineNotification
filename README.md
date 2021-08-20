@@ -4,8 +4,13 @@ Resuable LWC dataTable that will enhance your solution building speed.
 It is displaying tabular data where each column renders the content based on the data type.Here individuals data is displayed in the form of datatable built on LWC and has columns such as Name,Age,Geo and Email, Nearrest Vaccination Center.
 
 ## Introduction
+This repo showcases the best defaults for creating rich,interactive data-dense UI's Using the following Centerpieces-
+•	lightning-datatable from LWC.
+•	Refresh-apex from LWC
+•	Process builder
+•	Email-Alerts
 
-Do you want to deploy a set of changes, or create a self-contained application? Choose a [development model](https://developer.salesforce.com/tools/vscode/en/user-guide/development-models).
+Salesforce has invested heavily into LWC, Flow and Screen Flow and has given Architect Guidance around how to build scalable and flexible solutions now and into the future.
 
 ## Configure Your Salesforce DX Project
 
