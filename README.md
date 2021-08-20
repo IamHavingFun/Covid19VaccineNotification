@@ -12,13 +12,22 @@ This repo showcases the best defaults for creating rich,interactive data-dense U
 
 Salesforce has invested heavily into LWC, Flow and Screen Flow and has given [Architect Guidance](https://architect.salesforce.com/design/decision-guides/build-forms/) around how to build scalable and flexible solutions now and into the future.
 
-## Configure Your Salesforce DX Project
+This repo builds on that guidance and pushes data-dense UI design to the next level with highly reusable, highly configurable components. These components has allowed me to pivot on a dime to meet the changing speed of business.
 
-The `sfdx-project.json` file contains useful configuration information for your project. See [Salesforce DX Project Configuration](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_ws_config.htm) in the _Salesforce DX Developer Guide_ for details about this file.
+## Motivation
 
-## Read All About It
+The components found in this repo aim to solve these high level problems:
 
-- [Salesforce Extensions Documentation](https://developer.salesforce.com/tools/vscode/)
-- [Salesforce CLI Setup Guide](https://developer.salesforce.com/docs/atlas.en-us.sfdx_setup.meta/sfdx_setup/sfdx_setup_intro.htm)
-- [Salesforce DX Developer Guide](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_intro.htm)
-- [Salesforce CLI Command Reference](https://developer.salesforce.com/docs/atlas.en-us.sfdx_cli_reference.meta/sfdx_cli_reference/cli_reference.htm)
+Complex component communication can be difficult to design with consistency.
+Datatables are useful but high effort to use.
+Modals / Dialogs are useful but high effort to use.
+More detailed info can be found in the [wiki](https://github.com/manpreet-sfdc/Covid19VaccineNotification/wiki)
+
+## Getting Started
+
+1.	Take a look at the component overview.
+2.	Install core.
+3.	For first time users, install recipes in a scratch org.
+4.	Read the Configuration.
+5.	Skim the FAQ.
+
