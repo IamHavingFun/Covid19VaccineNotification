@@ -1,8 +1,9 @@
-# Salesforce DX Project: Next Steps
+# Covid-19 Vaccine Notification
 
-Now that you’ve created a Salesforce DX project, what’s next? Here are some documentation resources to get you started.
+Resuable LWC dataTable that will enhance your solution building speed.
+It is displaying tabular data where each column renders the content based on the data type.Here individuals data is displayed in the form of datatable built on LWC and has columns such as Name,Age,Geo and Email, Nearrest Vaccination Center.
 
-## How Do You Plan to Deploy Your Changes?
+## Introduction
 
 Do you want to deploy a set of changes, or create a self-contained application? Choose a [development model](https://developer.salesforce.com/tools/vscode/en/user-guide/development-models).
 
