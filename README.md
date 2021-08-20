@@ -6,10 +6,11 @@ It is displaying tabular data where each column renders the content based on the
 ## Introduction
 This repo showcases the best defaults for creating rich,interactive data-dense UI's Using the following Centerpieces-
 
-•	lightning-datatable from [LWC](https://developer.salesforce.com/docs/component-library/bundle/lightning-datatable/documentation).
-•	[Refresh-apex](https://developer.salesforce.com/docs/component-library/documentation/en/lwc/lwc.apex_result_caching) from LWC
-•	Process builder
-•	Email-Alerts
+1.	lightning-datatable from [LWC](https://developer.salesforce.com/docs/component-library/bundle/lightning-datatable/documentation).
+2.	[Refresh-apex](https://developer.salesforce.com/docs/component-library/documentation/en/lwc/lwc.apex_result_caching) from LWC
+3.	Process builder
+4.	Email-Alerts
+
 
 Salesforce has invested heavily into LWC, Flow and Screen Flow and has given [Architect Guidance](https://architect.salesforce.com/design/decision-guides/build-forms/) around how to build scalable and flexible solutions now and into the future.
 
