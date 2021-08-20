@@ -10,7 +10,7 @@ This repo showcases the best defaults for creating rich,interactive data-dense U
 •	Process builder
 •	Email-Alerts
 
-Salesforce has invested heavily into LWC, Flow and Screen Flow and has given Architect Guidance around how to build scalable and flexible solutions now and into the future.
+Salesforce has invested heavily into LWC, Flow and Screen Flow and has given [Architect Guidance](https://architect.salesforce.com/design/decision-guides/build-forms/) around how to build scalable and flexible solutions now and into the future.
 
 ## Configure Your Salesforce DX Project
 
