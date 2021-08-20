@@ -5,8 +5,9 @@ It is displaying tabular data where each column renders the content based on the
 
 ## Introduction
 This repo showcases the best defaults for creating rich,interactive data-dense UI's Using the following Centerpieces-
-•	lightning-datatable from LWC.
-•	Refresh-apex from LWC
+
+•	lightning-datatable from [LWC](https://developer.salesforce.com/docs/component-library/bundle/lightning-datatable/documentation).
+•	[Refresh-apex](https://developer.salesforce.com/docs/component-library/documentation/en/lwc/lwc.apex_result_caching) from LWC
 •	Process builder
 •	Email-Alerts
 
