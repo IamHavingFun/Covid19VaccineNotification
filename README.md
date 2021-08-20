@@ -1,18 +1,36 @@
-# Salesforce DX Project: Next Steps
+# Covid-19 Vaccine Notification
 
-Now that you’ve created a Salesforce DX project, what’s next? Here are some documentation resources to get you started.
+Resuable LWC dataTable that will enhance your solution building speed.
+It is displaying tabular data where each column renders the content based on the data type.Here individuals data is displayed in the form of datatable built on LWC and has columns such as Name,Age,Geo and Email, Nearrest Vaccination Center.
 
-## How Do You Plan to Deploy Your Changes?
+## Introduction
+This repo showcases the best defaults for creating rich,interactive data-dense UI's Using the following Centerpieces-
 
-Do you want to deploy a set of changes, or create a self-contained application? Choose a [development model](https://developer.salesforce.com/tools/vscode/en/user-guide/development-models).
+1.	lightning-datatable from [LWC](https://developer.salesforce.com/docs/component-library/bundle/lightning-datatable/documentation).
+2.	[Refresh-apex](https://developer.salesforce.com/docs/component-library/documentation/en/lwc/lwc.apex_result_caching) from LWC
+3.	Process builder
+4.	Email-Alerts
 
-## Configure Your Salesforce DX Project
 
-The `sfdx-project.json` file contains useful configuration information for your project. See [Salesforce DX Project Configuration](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_ws_config.htm) in the _Salesforce DX Developer Guide_ for details about this file.
+Salesforce has invested heavily into LWC, Flow and Screen Flow and has given [Architect Guidance](https://architect.salesforce.com/design/decision-guides/build-forms/) around how to build scalable and flexible solutions now and into the future.
 
-## Read All About It
+This repo builds on that guidance and pushes data-dense UI design to the next level with highly reusable, highly configurable components. These components has allowed me to pivot on a dime to meet the changing speed of business.
 
-- [Salesforce Extensions Documentation](https://developer.salesforce.com/tools/vscode/)
-- [Salesforce CLI Setup Guide](https://developer.salesforce.com/docs/atlas.en-us.sfdx_setup.meta/sfdx_setup/sfdx_setup_intro.htm)
-- [Salesforce DX Developer Guide](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_intro.htm)
-- [Salesforce CLI Command Reference](https://developer.salesforce.com/docs/atlas.en-us.sfdx_cli_reference.meta/sfdx_cli_reference/cli_reference.htm)
+## Motivation
+
+The components found in this repo aim to solve these high level problems:
+
+Complex component communication can be difficult to design with consistency.
+Datatables are useful but high effort to use.
+Modals / Dialogs are useful but high effort to use.
+More detailed info can be found in the [wiki](https://github.com/manpreet-sfdc/Covid19VaccineNotification/wiki)
+
+## Getting Started
+
+1.	Take a look at the [component](https://github.com/manpreet-sfdc/Covid19VaccineNotification/wiki/Component-Overview) overview.
+2.	[Data Model](https://github.com/manpreet-sfdc/Covid19VaccineNotification/wiki/Data-Model) Impelemted
+3.	Install core.
+4.	For first time users, install recipes in a scratch org.
+5.	Read the Configuration.
+6.	Skim the FAQ.
+
