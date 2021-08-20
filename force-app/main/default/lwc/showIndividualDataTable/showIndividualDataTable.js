@@ -1,4 +1,3 @@
-
 /**
 * ─────────────────────────────────────────────────────────────────────────────────────────────────┐
 * Component:  showIndividiualDataTable.js
@@ -29,8 +28,8 @@ const actions = [
 const columns = [   
 { label: 'Name', fieldName: 'Name' ,type: "text", sortable: true},
 { label: 'Age', fieldName: 'Age__c' ,type: "text", sortable: true},
-{ label: 'Is Notification Sent', fieldName: 'Is_Notification_Sent__c',type: "boolean", sortable: true },
-{ label: 'Email', fieldName: 'Email__c' , type: "text",sortable: true},
+{ label: 'Notification Sent', fieldName: 'Is_Notification_Sent__c',type: "boolean", sortable: true },
+{ label: 'Email', fieldName: 'Email__c' , type: "email",sortable: true},
 { label: 'Latitude', fieldName: 'Geo__Latitude__s' ,type: "number", sortable: true},
 { label: 'Nearest Vaccination Center', fieldName: 'Nearest_Vaccination_Center__c' ,type: "text", sortable: true},
 {
