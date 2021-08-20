@@ -28,8 +28,9 @@ More detailed info can be found in the [wiki](https://github.com/manpreet-sfdc/C
 ## Getting Started
 
 1.	Take a look at the [component](https://github.com/manpreet-sfdc/Covid19VaccineNotification/wiki/Component-Overview) overview.
-2.	Install core.
-3.	For first time users, install recipes in a scratch org.
-4.	Read the Configuration.
-5.	Skim the FAQ.
+2.	[Data Model](https://github.com/manpreet-sfdc/Covid19VaccineNotification/wiki/Data-Model) Impelemted
+3.	Install core.
+4.	For first time users, install recipes in a scratch org.
+5.	Read the Configuration.
+6.	Skim the FAQ.
 
