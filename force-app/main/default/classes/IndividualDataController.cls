@@ -33,10 +33,13 @@ return [ SELECT Id, Name, Age__c, Email__c,Geo__Latitude__s,Is_Notification_Sent
 @AuraEnabled
 public static boolean sendEmailNotification(String recordId) {
 Boolean notification = false;
-Individual__c  indObj= [ SELECT Id,Is_Notification_Sent__c   FROM Individual__c where id=:recordId];        
-if(indObj!=Null){
+Individual__c  indObj= [ SELECT Id,Is_Notification_Sent__c,Email__c  FROM Individual__c where id=:recordId];        
+if(indObj!=Null && indObj.Email__c !=Null){
 indObj.Is_Notification_Sent__c= true;
 notification=true;     
+}
+else{
+    notification=false;    
 }
 try{
 update indObj;
@@ -72,7 +75,7 @@ try{
     update indObj;
 }
 catch (Exception ex){
-    System.debug('There is an exception while updating neareast vaccination center field on Individual__c object' + ex.getMessage());
+    System.debug('There is an exception while updating neareast vaccination center field on Individual object' + ex.getMessage());
     }
 }
 else{

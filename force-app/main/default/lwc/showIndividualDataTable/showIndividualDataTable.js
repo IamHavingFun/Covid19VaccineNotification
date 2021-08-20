@@ -24,7 +24,6 @@ const actions = [
 { label: 'Edit', name: 'edit' },
 { label: 'Find Vaccination Center', name: 'findvaccinationcenter' },
 { label: 'Send Notification', name: 'SendNotification' },
-
 ];
 
 const columns = [   
@@ -48,14 +47,14 @@ columns = columns;
 rowId;
 message;
 notification;
-
+variant;
 /** Wired Apex result so it can be refreshed programmatically */
 wiredIndividualssResult;
 /**
 
 *  @description      : get Individual object data
 *  @name             : fetchIndividuals
-*  @throws exception : NONE
+*  @throwsexception : NONE
 **/
 
 @wire( fetchIndividuals )  
@@ -75,15 +74,24 @@ this.individuals = undefined;
 *  @description      : handling Find Vaccine Center RowAction
 *  @name             : findVaccinationCenter
 *  @param            : event
-*  @throws exception : NONE
+*  @throwsexception : NONE
 **/
 findVaccinationCenter(event){
 this.rowId = event.Id;  
 findVacCenter({recordId: this.rowId})
 .then(result => {
-this.message = 'Nearest Vaccination Center is- '+ ''+result;
-this.showToast();
-return refreshApex(this.wiredIndividualssResult);
+    if(result){
+        this.message = 'Nearest Vaccination Center is- '+ ''+result;
+        this.variant = 'success';
+        this.showToast();
+        return refreshApex(this.wiredIndividualssResult);
+    }
+    else{
+        this.variant = 'error';
+        this.message = 'There is a problem whiile Finding Vaccination Center. Please check with your administrator';
+        this.showToast(); 
+    }
+
 })
 .catch(error => {
 this.error = error;
@@ -96,17 +104,23 @@ console.log(error);
 *  @description      : handling sendNotification RowActions
 *  @name             : sendEmailNotification
 *  @param            : event
-*  @throws exception : NONE
+*  @throwsexception : NONE
 **/
 sendEmailNotification(event){
 this.rowId = event.Id;  
 sendEmail({recordId: this.rowId})
 .then(result => {
 this.notification = result;
+if(result){
 this.message = 'Email Notification has been sent Sucessfully!';
-console.log('@@@@@message', this.notification );
 this.showToast();
 return refreshApex(this.wiredIndividualssResult);
+}
+else{
+this.variant = 'error';
+this.message = 'There is a problem whiile Sending Email. Please check with your administrator';
+this.showToast();
+}
 })
 .catch(error => {
 this.error = error;
@@ -117,10 +131,10 @@ console.log(error);
 
 /**
 
-*  @description      : get UI Theme 
-*  @name             : getUIThemeDescriptionName
-*  @param            : String
-*  @throws exception : NONE
+*  @description      : Method to handle Row Actions.
+*  @name             : handleRowAction
+*  @param            : event
+*  @throwsexception : NONE
 **/
 handleRowAction( event ) {
 const actionName = event.detail.action.name;
@@ -130,8 +144,8 @@ case 'view':
 this[NavigationMixin.Navigate]({
 type: 'standard__recordPage',
 attributes: {
-    recordId: row.Id,
-    actionName: 'view'
+recordId: row.Id,
+actionName: 'view'
 }
 });
 break;
@@ -139,34 +153,31 @@ case 'edit':
 this[NavigationMixin.Navigate]({
 type: 'standard__recordPage',
 attributes: {
-    recordId: row.Id,
-    objectApiName: 'Individual__c',
-    actionName: 'edit'
+recordId: row.Id,
+objectApiName: 'Individual__c',
+actionName: 'edit'
 }
 });
 break;
 case 'findvaccinationcenter':
-console.log('calling findVaccinationCenter');
 this.findVaccinationCenter(row);
 break;
 case 'SendNotification' :
 this.sendEmailNotification(row);
-console.log('caling sendEmailNotification');
-
 default:
 }
 }
 /**
 
-*  @description      : get UI Theme 
-*  @name             : getUIThemeDescriptionName
+*  @description      : Show Toast Message for error or success! 
+*  @name             : showToast
 *  @param            : String
-*  @throws exception : NONE
+*  @throwsexception : NONE
 **/
 showToast() {
 const event = new ShowToastEvent({
 message: this.message,
-variant: 'success',
+variant: this.variant,
 mode: 'dismissable'
 });
 this.dispatchEvent(event);
