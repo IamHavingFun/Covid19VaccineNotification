@@ -31,5 +31,5 @@ More detailed info can be found in the [wiki](https://github.com/manpreet-sfdc/C
 2.	[Data Model](https://github.com/manpreet-sfdc/Covid19VaccineNotification/wiki/Data-Model) Impelemted
 3.	[Install core](https://github.com/manpreet-sfdc/Covid19VaccineNotification/wiki/Install-core).
 4.	[Componnet Review](https://github.com/manpreet-sfdc/Covid19VaccineNotification/wiki/Component-Overview)
-5.	[Getting Started And Setup][https://github.com/manpreet-sfdc/Covid19VaccineNotification/wiki/Getting-Started-And-Setup)
+5.	[Getting Started And Setup](https://github.com/manpreet-sfdc/Covid19VaccineNotification/wiki/Getting-Started-And-Setup)
 
