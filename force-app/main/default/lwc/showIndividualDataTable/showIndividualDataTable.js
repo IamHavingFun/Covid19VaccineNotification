@@ -47,6 +47,7 @@ rowId;
 message;
 notification;
 variant;
+vaccniationcenter;
 /** Wired Apex result so it can be refreshed programmatically */
 wiredIndividualssResult;
 /**
@@ -80,6 +81,7 @@ this.rowId = event.Id;
 findVacCenter({recordId: this.rowId})
 .then(result => {
     if(result){
+        this.vaccniationcenter = result;
         this.message = 'Nearest Vaccination Center is- '+ ''+result;
         this.variant = 'success';
         this.showToast();
@@ -115,6 +117,11 @@ this.message = 'Email Notification has been sent Sucessfully!';
 this.variant = 'success';
 this.showToast();
 return refreshApex(this.wiredIndividualssResult);
+}
+else if(this.vaccniationcenter==null){
+    this.variant = 'error';
+    this.message = 'There is a problem whiile Sending Email. Please click on Find Nearest Vaccination Center button';
+    this.showToast();
 }
 else{
 this.variant = 'error';

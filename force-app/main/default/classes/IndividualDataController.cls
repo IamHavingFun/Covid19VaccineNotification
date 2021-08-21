@@ -34,7 +34,7 @@ return [ SELECT Id, Name, Age__c, Email__c,Geo__Latitude__s,Is_Notification_Sent
 public static boolean sendEmailNotification(String recordId) {
 Boolean notification = false;
 Individual__c  indObj= [ SELECT Id,Is_Notification_Sent__c,Email__c,Nearest_Vaccination_Center__c  FROM Individual__c where id=:recordId];        
-if(indObj!=Null && indObj.Email__c !=Null && indObj.Nearest_Vaccination_Center__c!=Null){
+if(indObj!=Null && !String.isBlank(indObj.Email__c)  && !String.isBlank(indObj.Nearest_Vaccination_Center__c)){
 indObj.Is_Notification_Sent__c= true;
 notification=true;     
 }
