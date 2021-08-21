@@ -120,7 +120,7 @@ return refreshApex(this.wiredIndividualssResult);
 }
 else if(this.vaccniationcenter==null){
     this.variant = 'error';
-    this.message = 'There is a problem whiile Sending Email. Please click on Find Nearest Vaccination Center button';
+    this.message = 'Please update the Nearest Vaccination Center';
     this.showToast();
 }
 else{
