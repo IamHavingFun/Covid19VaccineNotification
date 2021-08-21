@@ -112,6 +112,7 @@ sendEmail({recordId: this.rowId})
 this.notification = result;
 if(result){
 this.message = 'Email Notification has been sent Sucessfully!';
+this.variant = 'success';
 this.showToast();
 return refreshApex(this.wiredIndividualssResult);
 }
