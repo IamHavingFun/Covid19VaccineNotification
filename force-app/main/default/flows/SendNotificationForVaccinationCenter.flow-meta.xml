@@ -102,7 +102,7 @@
             <label>CheckNotificationStatus</label>
         </rules>
     </decisions>
-    <interviewLabel>SendNotificationForVaccinationCenter-2_InterviewLabel</interviewLabel>
+    <interviewLabel>SendNotificationForVaccinationCenter-3_InterviewLabel</interviewLabel>
     <label>SendNotificationForVaccinationCenter</label>
     <processMetadataValues>
         <name>ObjectType</name>
